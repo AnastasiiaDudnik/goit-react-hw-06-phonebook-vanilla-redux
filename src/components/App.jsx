@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
-import { FormContainer } from './App.styled';
+import { Layout } from './Layout/Layout';
 
 const initialContacts = [
   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -50,13 +50,13 @@ export function App() {
   );
 
   return (
-    <FormContainer>
+    <Layout>
       <h1>Phonebook</h1>
       <ContactForm onSubmit={addContact} />
 
       <h2>Contacts</h2>
       <Filter filter={filter} onChange={onFilterChange} />
       <ContactList contacts={visibleContacts} onDelete={deleteNumber} />
-    </FormContainer>
+    </Layout>
   );
 }

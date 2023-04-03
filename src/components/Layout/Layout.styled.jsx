@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const FormContainer = styled.div`
+export const Container = styled.main`
   padding: 15px;
 `;

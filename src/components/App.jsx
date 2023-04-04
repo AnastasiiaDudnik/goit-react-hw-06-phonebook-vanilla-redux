@@ -52,10 +52,10 @@ export function App() {
   return (
     <Layout>
       <h1>Phonebook</h1>
-      <ContactForm onSubmit={addContact} />
+      <ContactForm />
 
       <h2>Contacts</h2>
-      <Filter filter={filter} onChange={onFilterChange} />
+      {/* <Filter filter={filter} onChange={onFilterChange} /> */}
       <ContactList />
     </Layout>
   );

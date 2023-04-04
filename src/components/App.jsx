@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+// import { useState } from 'react';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
@@ -23,7 +23,7 @@ import { Layout } from './Layout/Layout';
 
 export function App() {
   // const [contacts, setContacts] = useState(getInitialContact);
-  const [filter, setFilter] = useState('');
+  // const [filter, setFilter] = useState('');
 
   // const deleteNumber = phoneId => {
   //   setContacts(prevState => ({
@@ -37,17 +37,17 @@ export function App() {
   //     : setContacts([newContact, ...contacts]);
   // };
 
-  const onFilterChange = evt => {
-    setFilter(evt.currentTarget.value);
-  };
+  // const onFilterChange = evt => {
+  //   setFilter(evt.currentTarget.value);
+  // };
 
   // useEffect(() => {
   //   localStorage.setItem('contacts', JSON.stringify(contacts));
   // }, [contacts]);
 
-  const visibleContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  // const visibleContacts = contacts.filter(contact =>
+  //   contact.name.toLowerCase().includes(filter.toLowerCase())
+  // );
 
   return (
     <Layout>
